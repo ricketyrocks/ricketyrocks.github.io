@@ -1,29 +1,83 @@
+/* http://paletton.com/#uid=63u0u0kbUrO3FKE7uxNgMn7lhj2 */
+
+:root {
+	--primary-1: #5C7B8D;	/* Main Primary color */
+	--primary-2: #B9C7D0;
+	--primary-3: #839AA8;
+	--primary-4: #3B6075;
+	--primary-5: #244A61;
+
+	--secondary-1: #686C99;	/* Main Secondary color (1) */
+	--secondary-2: #C2C3D7;
+	--secondary-3: #9193B5;
+	--secondary-4: #464A80;
+	--secondary-5: #2D3169;
+
+	--tertiary-color: #629B7E;	/* Main Secondary color (2) */
+	--tertiary-color: #BFD8CC;
+	--tertiary-color: #8CB7A1;
+	--tertiary-color: #3E815F;
+	--tertiary-color: #246A46;
+
+	--complement-1: #DEB98B;	/* Main Complement color */
+	--complement-2: #FFF2E2;
+	--complement-3: #FFE4C3;
+	--complement-4: #B88D58;
+	--complement-5: #986A33;
+}
+
 body {
-	background-color: #d59a58;
+	background-color: var(--primary-2);
 	width: 700px;
 	margin: 0 auto;
 	font-family: Courier;
 }
 img {
-  vertical-align: middle;
+	vertical-align: middle;
+	display: inline;
+	padding: 0px;
 }
+
+span {
+	background-color: var(--primary-1);
+	color: white;
+}
+
 #titular {
-	background-color: #e1dddd;
-  width: 660px;
-	padding: 10px;
-	margin: 10px;
-  font-size: 24pt;
-	font-weight: bold;
-	text-align: center;
-  display: inline-block;
+	background-color: var(--primary-5);
+	padding: 10px 0px;
+	display: flex;
+	justify-content: center;
 }
+#title_words {
+	padding: 11px;
+	background-color: var(--primary-1);
+	color: white;
+	font-size: 24pt;
+	font-weight: bold;
+	border-top-right-radius: 0px;
+	border-bottom-right-radius: 0px;
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+}
+#title_icon {
+	width: 60px;
+	height: 60px;
+	background-image: url('../images/ricketyrocksicon-60x60.png');
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+	border-top-left-radius: 0px;
+	border-bottom-left-radius: 0px;
+	text-align: baseline;
+}
+
 #content {
 	overflow: auto;
 	height: 100%;
 }
 
 .column {
-	background-color: #e1dddd;
+	background-color: var(--complement-2);
 	width: 320px;
 	float: left;
 	margin: 10px;
